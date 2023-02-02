@@ -1,3 +1,4 @@
+console.log("*** EJERCICIO 1 ***")
 /*Ejercicio POO 1
 Crear la clase Persona, con propiedades nombre, edad y género, y el método obtDetalles(), que muestra por pantalla las propiedades de la persona.*/
 
@@ -52,70 +53,6 @@ let miProfesor = new Profesor ("Manuel", 36, "masculino","Biologia","4º");
 
 miProfesor.asignar()
 
-
-// MAYAS Y AZTECAS
-
-class Warrior{
-    constructor (life,power){
-        this.life = life;
-        this.power = power;
-    }
-    attack() {
-        console.log(`El daño realizado es de ${this.power}`)
-    }
-    defend(damage){
-        let daño = this.life - damage
-        console.log(`Despues de recibir ${damage} de daño la vida es de ${daño}`)
-    }
-}
-
-let warrio1 = new Warrior (200, 30);
-
-// warrio1.defend(30)
-
-class Maya extends Warrior {
-    constructor(life,power) {
-        super(life,power)
-    }
-    drinkColaCao() {
-        this.life += 10
-        console.log(`Vida aumenta a ${this.life}`)
-    }
-}
-
-let maya1 = new Maya (200,30);
-maya1.drinkColaCao()
-
-class Azteca extends Warrior {
-    constructor(life,power,) {
-        super(life,power)
-    }
-    drinkNesquik() {
-        this.life += 10
-        console.log(`Vida aumenta a ${this.life}`)
-    }
-}
-
-let azteca1 = new Azteca (200,30);
-azteca1.drinkNesquik()
-
-console.log("*** COMIENZA LA BATALLA ***")
-console.log("EL Azteca bebe Nesquik, aumentado su vida hasta: ")
-azteca1.drinkNesquik()
-
-console.log("EL Maya bebe Nesquik, aumentado su vida hasta: ")
-maya1.drinkColaCao()
-
-console.log("Maya ataca a Azteca")
-maya1.attack()
-// console.log("El Azteca recibe 30 de daño y su vida se queda en: ")
-azteca1.defend(30)
-
-console.log("Azteca ataca a Maya")
-azteca1.attack()
-
-// console.log("El Maya recibe 30 de daño y su vida se queda en: ")
-maya1.defend(30)
 
 
 
